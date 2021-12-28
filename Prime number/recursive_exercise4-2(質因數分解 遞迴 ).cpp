@@ -1,4 +1,4 @@
-//��ƻ��j 
+//½è¼Æ»¼°j 
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
