@@ -193,41 +193,41 @@ class Map{
 		void GameInformation(){
 			int startline = 1;
 		    gotoxy(WIDTH+2,startline);
-		    cout<<"¦¹¹CÀ¸¬°¥Í¦s¹CÀ¸,Ãö¥d¨î"<<endl;
+		    cout<<"æ­¤éŠæˆ²ç‚ºç”Ÿå­˜éŠæˆ²,é—œå¡åˆ¶"<<endl;
 		    gotoxy(WIDTH+2,startline+1);
-		    cout<<"¦@¤­Ãö,¨CÃö60¬í"<<endl;
+		    cout<<"å…±äº”é—œ,æ¯é—œ60ç§’"<<endl;
 		    gotoxy(WIDTH+2,startline+2);
-		    cout<<"¤@¥¹ª±®a³Q©Çª«°l¤W,¹CÀ¸µ²§ô"<<endl;
+		    cout<<"ä¸€æ—¦çŽ©å®¶è¢«æ€ªç‰©è¿½ä¸Š,éŠæˆ²çµæŸ"<<endl;
 		    gotoxy(WIDTH+2,startline+3);
-		    cout<<"ª±®a±N³z¹LWASD©Î¤W¤U¥ª¥kÁä¨Ó±±¨î¤è¦V"<<endl;
+		    cout<<"çŽ©å®¶å°‡é€éŽWASDæˆ–ä¸Šä¸‹å·¦å³éµä¾†æŽ§åˆ¶æ–¹å‘"<<endl;
 		    gotoxy(WIDTH+2,startline+5);
-		    cout<<"¨C¹j10¬í,ÀH¾÷¦b²£¥Í¤U¦C¥|ºØBUFF,"<<endl;
+		    cout<<"æ¯éš”10ç§’,éš¨æ©Ÿåœ¨ç”¢ç”Ÿä¸‹åˆ—å››ç¨®BUFF,"<<endl;
 		    gotoxy(WIDTH+2,startline+6);
-			cout<<"ª±®a¥i¥H¦Y"<<endl;
+			cout<<"çŽ©å®¶å¯ä»¥åƒ"<<endl;
 		    gotoxy(WIDTH+2,startline+8);
-		    cout<<"F: ª±®a²¾°Ê³t«×ÅÜ§Ö2­¿"<<endl;
+		    cout<<"F: çŽ©å®¶ç§»å‹•é€Ÿåº¦è®Šå¿«2å€"<<endl;
 		    gotoxy(WIDTH+2,startline+9);
-		    cout<<"S: monster²¾°Ê³t«×´î¥b"<<endl;
+		    cout<<"S: monsterç§»å‹•é€Ÿåº¦æ¸›åŠ"<<endl;
 		    gotoxy(WIDTH+2,startline+10);
-		    cout<<"B: ©Ò¦³ monsters ¥ß¨è¦º¤`"<<endl;
+		    cout<<"B: æ‰€æœ‰ monsters ç«‹åˆ»æ­»äº¡"<<endl;
 		    gotoxy(WIDTH+2,startline+11);
-		    cout<<"T: Âà´«³W«h,monster­n°kÂ÷ª±®a,"<<endl;
+		    cout<<"T: è½‰æ›è¦å‰‡,monsterè¦é€ƒé›¢çŽ©å®¶,"<<endl;
 			gotoxy(WIDTH+2,startline+12);
-			cout<<"ª±®a¥i¥H¦Y±¼ monster"<<endl;
+			cout<<"çŽ©å®¶å¯ä»¥åƒæŽ‰ monster"<<endl;
 		    gotoxy(WIDTH+2,startline+14);
-		    cout<<"©Ò¦³ª««~ªºbuff«ùÄò®É¶¡¬°5¬í¡A°£¤FB"<<endl;
+		    cout<<"æ‰€æœ‰ç‰©å“çš„buffæŒçºŒæ™‚é–“ç‚º5ç§’ï¼Œé™¤äº†B"<<endl;
 		    gotoxy(WIDTH+2,startline+15);
-		    cout<<"³q¹L¤@Ãö +20¤À"<<endl;
+		    cout<<"é€šéŽä¸€é—œ +20åˆ†"<<endl;
 		    gotoxy(WIDTH+2,startline+16);
-		    cout<<"¦Y¨ìBuff +5¤À"<<endl;
+		    cout<<"åƒåˆ°Buff +5åˆ†"<<endl;
 		    gotoxy(WIDTH+2,startline+17);
-		    cout<<"Monster ¦º±¼+10¤À"<<endl;
+		    cout<<"Monster æ­»æŽ‰+10åˆ†"<<endl;
 		    gotoxy(WIDTH+2,startline+19);
-		    cout<<"²Ä"<<level<<"Ãö"<<endl;
+		    cout<<"ç¬¬"<<level<<"é—œ"<<endl;
 			gotoxy(WIDTH+2,startline+20);
-			cout<<"®É¶¡ : 0"<<endl;
+			cout<<"æ™‚é–“ : 0"<<endl;
 			gotoxy(WIDTH+2,startline+21);
-			cout<<"¤À¼Æ : 0"<<endl;
+			cout<<"åˆ†æ•¸ : 0"<<endl;
 		}
 		void SetObstacleData(int x[OBSTACLE_LENGTH],int y[OBSTACLE_LENGTH],int ObstacleWidth[OBSTACLE_LENGTH],int ObstacleHeight[OBSTACLE_LENGTH]){
 			for(int i=0;i<OBSTACLE_LENGTH;i++){
@@ -898,7 +898,7 @@ class LinkedList{
 		void Control(){
 			if(Count()){
 				gotoxy(WIDTH+2,21);
-				cout<<"®É¶¡ : "<<time_count<<endl;
+				cout<<"æ™‚é–“ : "<<time_count<<endl;
 				if((time_count % 10 == 0) && (time_count != 0)){
 					B->Produce();
 					gotoxy(30,28);
@@ -1018,7 +1018,7 @@ class LinkedList{
 		void AddScore(int a){
 			score = score + a;
 			gotoxy(WIDTH+2,22);
-			cout<<"¤À¼Æ : "<<score<<endl;
+			cout<<"åˆ†æ•¸ : "<<score<<endl;
 			return;
 		}
 		int Monsternumber(){
@@ -1040,7 +1040,7 @@ class LinkedList{
 						AddScore(5);
 						first->Timer(player_move/2);
 						gotoxy(0,26);
-						cout<<"ª±®a²¾°Ê³t«×ÅÜ§Ö2­¿!!";
+						cout<<"çŽ©å®¶ç§»å‹•é€Ÿåº¦è®Šå¿«2å€!!";
 						buff_temp = F_NUMBER;
 						B->Delete_Buff(object->ReturnX(),object->ReturnY());
 						break;
@@ -1049,7 +1049,7 @@ class LinkedList{
 						AddScore(5);
 						SlowMonster();
 						gotoxy(0,27);
-						cout<<"monster²¾°Ê³t«×´î¥b!!";
+						cout<<"monsterç§»å‹•é€Ÿåº¦æ¸›åŠ!!";
 						buff_temp = S_NUMBER;
 						B->Delete_Buff(object->ReturnX(),object->ReturnY());
 						break;
@@ -1059,7 +1059,7 @@ class LinkedList{
 						AddScore(10*num);
 						All_Monster_Die();
 						gotoxy(0,28);
-						cout<<"©Ò¦³ monsters ¥ß¨è¦º¤`!!";
+						cout<<"æ‰€æœ‰ monsters ç«‹åˆ»æ­»äº¡!!";
 						B->Delete_Buff(object->ReturnX(),object->ReturnY());
 						break;
 					case T_NUMBER:
@@ -1068,7 +1068,7 @@ class LinkedList{
 						T_check = 1;
 						buff_temp = T_NUMBER;
 						gotoxy(0,29);
-						cout<<"Âà´«³W«h!!";
+						cout<<"è½‰æ›è¦å‰‡!!";
 						B->Delete_Buff(object->ReturnX(),object->ReturnY());
 						break;
 					default:
@@ -1242,7 +1242,7 @@ class LinkedList{
 					Delete_Object(first);
 		        	system("cls");
 					gotoxy(25,12);
-		        	cout<<"87! ·|¤£·|ª±°Ú";
+		        	cout<<"87! æœƒä¸æœƒçŽ©å•Š";
 		        	gotoxy(25,14);
 		        	cout<<"your score = "<<score;
 		        	break;
